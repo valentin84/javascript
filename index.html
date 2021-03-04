@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Catalog Urban</h1>
+        <section class="input">
+            <form id="submit-form" action="submit">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="name" required>
+
+                <label for="age">Age</label>
+                <input id="age" type="number" class="age" required min="18" max="99">
+
+                <label for="math">Math</label>
+                <input id="math" type="number" class="math" required min="1" max="10">
+
+                <label for="english">English</label>
+                <input id="english" type="number" class="english" required min="1" max="10">
+
+                <label for="history">History</label>
+                <input id="history" type="number" class="history" required min="1" max="10">
+
+                <label for="coding">Coding</label>
+                <input id="coding" type="number" class="coding" required min="1" max="10">
+
+                <button type="button"class="submit" onclick="generateTable()">Submit</button>
+                <button type="button"class="delete" onclick="deleteRow()">Delete</button>
+                <button type="button"class="delete" onclick="orderRows()">Order</button>
+            </form>    
+        </section>
+        <section class="results">
+            <table id="table">
+                <thead>     
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Math</th>
+                        <th>English</th>
+                        <th>History</th>
+                        <th>Coding</th>
+                        <th>Gpa</th>
+                    </tr>
+                </thead> 
+                <tbody class="tbody">
+                      
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

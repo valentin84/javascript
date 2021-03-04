@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+.input {
+    width: 40%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+input {
+    display: block;
+    width: 150px;
+    margin: 5px auto;
+    border: 2px solid black;
+}
+input:invalid {
+    border: 1px solid red;
+}
+
+input:invalid:required {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+table {
+    margin-top: 50px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #999;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+button {
+    margin-top: 35px;
+}
