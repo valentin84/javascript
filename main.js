@@ -19,67 +19,55 @@ function generateTable() {
     if (name == "" || age == "" || math == "" || english == "" || history == "" || coding == "") {
         console.log("neev Values");
     } else {
-        for (var i = 0; i < 1; i++) {
             var row = document.createElement("tr");
-
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(name);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(age);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(math);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(english);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(history);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var cellText = document.createTextNode(coding);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            for (var j = 0; j < 1; j++) {
-                var cell = document.createElement("td");
-                var gpa = (Number(math) + Number(english) + Number(history) + Number(coding)) / 4;
-                
-                var cellText = document.createTextNode(gpa);
         
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(name);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(age);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(math);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(english);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(history);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(coding);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        
+        
+            var cell = document.createElement("td");
+            var gpa = (Number(math) + Number(english) + Number(history) + Number(coding)) / 4;
+            
+            var cellText = document.createTextNode(gpa);
+    
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+            
 
             tBody.appendChild(row);
         }
-
-        gpaTable.push(gpa);
-        gpaTable.sort(function(a, b) {
-            return a - b;
-        });
-
-        console.log(gpaTable);
-    }
-    
-    
 
     document.getElementById('submit-form').reset();
 }
